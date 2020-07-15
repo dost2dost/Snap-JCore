@@ -18,7 +18,7 @@ public class Main {
         /**
          * Datatype check
          *
-         */
+
 
         Dtype obj=new Dtype();
         s="hello testing ";
@@ -26,6 +26,7 @@ public class Main {
         aShort=15478;
         DataType dataType=Dtype.chkType(aShort);
         System.out.println(dataType.toString());
+         */
 
 
 
