@@ -40,4 +40,13 @@ public class DataType {
     public void setMaxV(Object maxV) {
         this.maxV = maxV;
     }
+
+    @Override
+    public String toString() {
+        return "DataType{" +
+                "type=" + type +
+                ", minV=" + minV +
+                ", maxV=" + maxV +
+                '}';
+    }
 }

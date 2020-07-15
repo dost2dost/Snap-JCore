@@ -4,14 +4,6 @@ package DataType;
  * Created by DostM on 7/15/2020.
  */
 public class Dtype {
-    private  static byte aByte;
-    private  static short aShort;
-    private int anInt;
-    private String string;
-    private boolean aBoolean;
-    private long aLong;
-
-
 
     public static <T> String nameOf(T o) {
         return o.getClass().getSimpleName();
@@ -35,19 +27,24 @@ public class Dtype {
             case "Double":
                 typeMaxMin=new DataType(nameOf(o),Double.MIN_VALUE,Double.MAX_VALUE);
                 break;
-            case "Character":
-                typeMaxMin=new DataType(nameOf(o),Character.MIN_VALUE,Character.MAX_VALUE);
+            case "Float":
+                typeMaxMin=new DataType(nameOf(o),Float.MIN_VALUE,Float.MAX_VALUE);
                 break;
+            case "Character":
+                typeMaxMin=new DataType(nameOf(o),0,0);
+                break;
+            case "String":
+                typeMaxMin=new DataType(nameOf(o),0,0);
+                break;
+            case "Boolean":
+                typeMaxMin=new DataType(nameOf(o),0,0);
+                break;
+
+
 
         }
         return typeMaxMin;
 
-    }
-    public static void main(String args[]){
-        aByte = 25;
-        aShort=32767;
-        DataType dataType=chkType(aShort);
-        System.out.println("Type: "+dataType.getType()+"\nMinV: "+dataType.getMinV()+" MaxV:"+dataType.getMaxV());
     }
 
 }
