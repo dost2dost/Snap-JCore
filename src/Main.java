@@ -1,5 +1,8 @@
 import DataType.DataType;
 import DataType.Dtype;
+import casting.NarrowCastinManualy;
+import casting.WideningCastingAuto;
+import casting.WrapperCasting;
 
 public class Main {
 
@@ -15,6 +18,19 @@ public class Main {
     public static void main(String[] args) {
 
 
+        /**
+         * casting widining and narrow
+         */
+        /*
+        anInt=10;
+        aDouble=20.5;
+        NarrowCastinManualy narrowCastinManualy=new NarrowCastinManualy();
+        WideningCastingAuto wideningCastingAuto=new WideningCastingAuto();
+        WrapperCasting wrapperCasting=new WrapperCasting();
+        System.out.println("WideCasting: "+wideningCastingAuto.getaDouble(anInt));
+        System.out.println("Narrow Casting : "+ narrowCastinManualy.getInt(aDouble));
+        System.out.println("WraperCasting : "+ wrapperCasting.getDouble(anInt)+" wrapercasting int:"+wrapperCasting.getInteger(aDouble));
+                *********/
         /**
          * Datatype check
          *
