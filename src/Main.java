@@ -3,6 +3,9 @@ import DataType.Dtype;
 import casting.NarrowCastinManualy;
 import casting.WideningCastingAuto;
 import casting.WrapperCasting;
+import jstring.MyString;
+import maths.MyMath;
+import operators.BinaryOperator;
 
 public class Main {
 
@@ -16,6 +19,39 @@ public class Main {
     private static long aLong;
 
     public static void main(String[] args) {
+
+        myMath();
+
+        //String
+//        String s="Hello testing for dummy";
+//        MyString myString=new MyString();
+//        myString.replaceAll(s,"for","with");
+//        byte[] bytes=myString.getBytes(s);
+//        for(byte b:bytes){
+//            System.out.println(b);
+//        }
+//        char[] a=myString.creatArray(s);
+//        for(char ch:a){
+//            System.out.println(ch);
+//        }
+        //System.out.println(myString.compare(s,s));
+        //myString.substringg(s);
+
+
+
+
+        //Bianry operator swap two no
+//        int x=10;int y=5;
+//        int[] a=new int[3];
+//        BinaryOperator binaryOperator=new BinaryOperator();
+//        a=binaryOperator.swapBinary(x,y);
+
+       // System.out.println(binaryOperator.changeBase("45",2));
+
+       // System.out.println(binaryOperator.evenOdd(7));
+        //System.out.println(binaryOperator.checkPowerof2(16));
+       // System.out.println(2>>2);
+
 
 
         /**
@@ -52,5 +88,16 @@ public class Main {
 //    Test<String,Integer> obj=new Test<>("hello",10);
 //    Test<Short,Double> obj2=new Test<Short,Double>((short) 32766,56789.52);
 //    obj2.print();
+   }
+
+   public static void myMath(){
+        double d=10.5;
+        int a=45;
+        int b=70;
+
+        MyMath math=new MyMath();
+       System.out.println("Max is : "+math.maxNo(a,b)+" Min is : "+math.minNo(a,b));
+
+
    }
 }
