@@ -3,9 +3,13 @@ import DataType.Dtype;
 import casting.NarrowCastinManualy;
 import casting.WideningCastingAuto;
 import casting.WrapperCasting;
+import ifelsbool.Swithching;
+import jarrays.MyArrays;
 import jstring.MyString;
+import looping.Dowile;
 import maths.MyMath;
 import operators.BinaryOperator;
+import recursions.Recor;
 
 public class Main {
 
@@ -20,7 +24,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        myMath();
+        rekors();
+            //arrays();
+        //looping();
+        //switchtest();
+       // myMath();
 
         //String
 //        String s="Hello testing for dummy";
@@ -90,14 +98,45 @@ public class Main {
 //    obj2.print();
    }
 
+    private static void rekors() {
+        Recor obj=new Recor();
+        obj.printNumber(5);
+//        int result=obj.sum(5,10);
+//        System.out.println(result);
+    }
+
+    private static void arrays() {
+
+        MyArrays obj=new MyArrays();
+        obj.intarray();
+        //obj.dint();
+        //obj.strarray();
+    }
+
+    public static void looping(){
+       Dowile obj=new Dowile();
+       int no=11;
+       obj.dowile(no);
+       //obj.wile(no);
+
+   }
+   public static void switchtest(){
+       Swithching obj=new Swithching();
+       System.out.println(obj.Day(7));
+
+   }
    public static void myMath(){
         double d=10.5;
         int a=45;
         int b=70;
 
         MyMath math=new MyMath();
-       System.out.println("Max is : "+math.maxNo(a,b)+" Min is : "+math.minNo(a,b));
+        double dd=math.naturalLog(100.10);
+       System.out.println(math.ternaryOperate(10));
+        //System.out.println("natural log : "+dd+"\nRound off "+math.roundoff(dd));
+       //System.out.println("Max is : "+math.maxNo(a,b)+" Min is : "+math.minNo(a,b));
 
 
    }
+
 }

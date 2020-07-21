@@ -36,5 +36,9 @@ public class MyMath {
     public double squareRoot(double d){
         return Math.sqrt(d);
     }
+    public String ternaryOperate(int time){
+        String result=(time<8)?"Good morning !":"Good Evening !";
+        return result;
+    }
 
 }
