@@ -3,13 +3,17 @@ import DataType.Dtype;
 import casting.NarrowCastinManualy;
 import casting.WideningCastingAuto;
 import casting.WrapperCasting;
+import collections.Hashset;
 import ifelsbool.Swithching;
 import jarrays.MyArrays;
 import jstring.MyString;
+import jstring.StringManipulate;
 import looping.Dowile;
 import maths.MyMath;
 import operators.BinaryOperator;
 import recursions.Recor;
+
+import java.util.Map;
 
 public class Main {
 
@@ -23,9 +27,10 @@ public class Main {
     private static long aLong;
 
     public static void main(String[] args) {
-
-        rekors();
-            //arrays();
+        hasdisp();
+        //stringManipulate();
+        // rekors();
+        //arrays();
         //looping();
         //switchtest();
        // myMath();
@@ -98,6 +103,22 @@ public class Main {
 //    obj2.print();
    }
 
+    private static void stringManipulate() {
+
+//        StringManipulate stringManipulate=new StringManipulate();
+//        String str=stringManipulate.removDuplicateWrd("hello it is working working fine fine just just only test test ! !");
+//        Map wordcount=stringManipulate.countWrd("hello hello word word test test again ");
+//        wordcount.forEach((k,v)->{
+//            System.out.println(k+" repeating time : "+v);
+//        });
+        //System.out.println(stringManipulate.reversWrd(str));
+    }
+
+    private static void hasdisp() {
+        Hashset obj=new Hashset();
+        obj.disp();
+    }
+
     private static void rekors() {
         Recor obj=new Recor();
         obj.printNumber(5);
@@ -108,7 +129,9 @@ public class Main {
     private static void arrays() {
 
         MyArrays obj=new MyArrays();
-        obj.intarray();
+        int a[]={1,1,2,2,3,3,4,4,5};
+        obj.apearOnce(a);
+       // obj.intarray();
         //obj.dint();
         //obj.strarray();
     }

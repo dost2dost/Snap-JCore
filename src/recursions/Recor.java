@@ -4,6 +4,7 @@ package recursions;
  * Created by DostM on 7/22/2020.
  */
 public class Recor {
+    // loop through recursions
     public void printNumber(int no){
         if(no==0){
             return;
