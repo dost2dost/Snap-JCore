@@ -3,24 +3,25 @@ package collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by DostM on 8/15/2020.
  */
 public class Hashset {
-    Set set2=new LinkedHashSet<String>();
+
     public void disp(){
-        Set set=new LinkedHashSet<String>();
+        Set set=new HashSet<String>();
 
-        set.add("one");
-        set.add("two");
-        set.add("three");
+        set.add("zne");
+        set.add("awo");
+        set.add("dhree");
         set.add("four");
-        set.add("four");
-        set.add(null);
-        set.add(null);
-
-        System.out.println(set);
+        set.add("zour");
+//        set.add(null);
+//        set.add(null);
+        Set set2=new TreeSet(set);
+        System.out.println(set2);
        String[] ar= converttoArra(set);
 
         for(String s:ar){
